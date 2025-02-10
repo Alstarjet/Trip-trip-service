@@ -15,7 +15,7 @@ def create_product(request):
             product = form.save(commit=False)
             product.creator = request.user  # Assign current user as creator
             product.save()
-            return redirect("product_list")  # Redirect to product list (to be implemented)
+            return redirect("product_list")
     else:
         form = ProductForm()
 

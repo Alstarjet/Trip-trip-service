@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'tripservice.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dndstores',
+        'USER': 'alberto',
+        'PASSWORD': 'qazwsx12',
+        'HOST': 'localhost',  # o la IP de tu servidor PostgreSQL
+        'PORT': '5432',  # Puerto predeterminado de PostgreSQL
     }
 }
 

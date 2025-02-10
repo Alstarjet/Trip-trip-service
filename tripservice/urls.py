@@ -18,7 +18,6 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
 from dndstores.views import create_product
-from dndstores.views import debug_template
 from dndstores.views import signup
 from dndstores.views import home
 
